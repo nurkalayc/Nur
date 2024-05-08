@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<style>
+    #section-1 {
+        background-image: url("img/background.jpg");
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    .navbar .navbar-expand-lg{
+        background-color: revert;
+    }
+    .bigFont {
+        font-size: 48px;
+    }
+
+    .clientSwiper .swiper-slide img:hover {
+        filter: unset;
+    }
+
+    uniquifier > {
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+
+    a:hover {
+        color: unset;
+    }
+
+
+    .clientSwiper .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clientSwiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+        opacity: 50%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        width: 5%;
+        color: red;
+        border: 2px;
+    }
+
+    #contain {
+        width: 40%;
+        margin-left: auto;
+    }
+
+    .container img.under {
+        width: 95%;
+    }
+
+    .container img.over {
+        position: absolute;
+        margin-top: 15%;
+        right: 75%;
+        z-index: 1;
+        width: 90%;
+        height: auto;
+    }
+
+    h1:before,
+    h1:after {
+        background-color: red;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 5%;
+    }
+
+    h1:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    h1:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+    .frame {
+        border: 6px solid white;
+        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #fff;
+        border-color: red;
+        border-radius: 50%;
+    }
+
+    .nav-tabs .nav-link {
+        color: black;
+    }
+
+    .dropdown-menu {
+        background-color: darkgrey;
+    }
+
+    .icon {
+        color: white;
+        background-color: red;
+        border: 1px;
+        box-shadow: 0px 0px 20px red;
+    }
+
+    .dollar {
+        vertical-align: top;
+    }
+
+    .cont {
+        background-color: #f4f4f4;
+    }
+
+    h5 {
+        font-size: smaller;
+    }
+
+
+    .rec888 {
+        padding: 7%;
+    }
+
+    #tree-bg {
+        background-image: url("img/tree.jpeg");
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cards {
+        background-color: #f4f4f4;
+    }
+
+    .contact {
+        margin: auto;
+    }
+
+    #section-7 .card.active {
+        z-index: 4;
+        scale: 1.12;
+        border: 2px solid red;
+    }
+
+    .font {
+        font-size: x-small;
+    }
+
+
+    #section-2 .container-fluid .row .tree-img .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section-2 .container-fluid .row .tree-img img {
+        filter: brightness(40%);
+    }
+
+    .gly-rotate-180 {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        display: inline-block;
+    }
+
+    #section-1 .sign-up-form {
+        margin-top: 20px;
+        padding: 10px;
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    #section-6 .card:hover {
+        padding: 10%;
+        border-color: red;
+
+    }
+
+    #section-2 .div img:hover {
+        filter: unset;
+    }
+
+    #section-6 .card:hover a {
+        background-color: red;
+        color: white;
+    }
+
+    #section-6 .card:hover {
+        scale: 1.15;
+        z-index: 1;
+    }
+
+    #section-6 .accordion-button:not(.collapsed) {
+        color: red;
+    }
+
+
+    #section-3 .row .col .services p:hover {
+        color: white;
+    }
+    .cardImgAnimation:hover{
+        scale: 1.1;
+
+    }
+
+    .cardImgAnimation{
+        scale: 1;
+        transition: scale 0.5s ease;
+
+    }
+
+    .navbar-brand:focus, .navbar-brand:hover{
+        color: white;
+    }
+
+    /*pc*/
+    @media only screen and (min-width: 1024px) {
+        #section-3 .container .row .services {
+            display: flex;
+        }
+        #section-7 .container .cont .row .col-lg-12{
+            display: flex;
+        }
+        #section-3 .container .row .row .col {
+            display: block;
+        }
+
+        #section-2 .container-fluid .row .col .row {
+            display: flex;
+        }
+
+        #section-2 .row {
+            display: flex;
+        }
+
+        #section-7 .container .row .col {
+            display: flex;
+        }
+
+        #section-7 .container .row {
+            display: flex;
+        }
+
+        #section-7.container.row .col-6 {
+            width: 50%;
+        }
+
+        #section-7 .container .row .col {
+            display: inline-flex;
+        }
+    }
+
+    /*Tablet*/
+    @media only screen and (max-width: 768px) {
+        * {
+            font-size: small;
+        }
+
+        /* section-1 */
+        #section-1 .input-group {
+            width: 100% !important;
+        }
+
+        #section-1 .welcome {
+            padding-top: 50% !important;
+        }
+
+        #section-1 .get button {
+            margin-inline-end: 90px;
+        }
+
+
+        /* section-2 */
+        #section-2 .swiper-wrapper {
+            display: inline-flex;
+        }
+
+        #section-2 .cards {
+            display: block;
+        }
+
+        #section-2 .container-fluid .row .col .row {
+            display: block;
+        }
+
+        #section-2 .swiper .row {
+            display: block !important;
+        }
+
+        #section-2 .swiper .swiper-wrapper .row {
+            display: flex !important;
+        }
+
+        #section-2 .container-fluid .swiper .swiper-wrapper .row .col .row{
+            display: flex !important;
+        }
+
+        /* section-3 */
+        #section-3 .container .row .row .col {
+            display: contents;
+        }
+
+        #section-3 .container .row .services {
+            display: block !important;
+        }
+        /* section-4 */
+        #section-4 .container .bir {
+            flex-direction: column-reverse !important;
+        }
+        #section-4 .container .iki {
+            flex-direction: column;
+        }
+        #section-4 .row col-12{
+            margin-top: 5%;
+        }
+        #section-4 .container .feautures {
+            padding-bottom: 5%;
+        }
+
+        #section-4 .container .row #contain {
+            margin-left: 30%;
+        }
+
+        #section-4 .container .col img {
+            display: block;
+        }
+
+        #section-4 img.over {
+            position: relative;
+            width: 100%;
+        }
+
+        #section-4 .container button {
+            padding: 3px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #section-4 #contain {
+            padding-bottom: 5%;
+        }
+
+        .under{
+            position: absolute;
+        }
+
+        /* section-5 */
+        #section-5 .row {
+            display: block;
+        }
+
+        /* section-6 */
+        #section-6 .container .row {
+            display: block;
+
+        }
+
+        #section-6 .container .col-4 {
+            width: 100%;
+        }
+
+        /* section-7 */
+        #section-7 .container .row .col {
+            display: block;
+        }
+
+        #section-7 .container .row .col-6 {
+            width: 100%;
+        }
+
+        #section-7 .container .row {
+            display: block;
+        }
+
+        /* section-9 */
+        #section-9 .container .contact {
+            display: block;
+            text-align: -webkit-center;
+        }
+    }
+
+    /*Mobile*/
+    @media only screen and (max-width: 480px) {
+        * {
+            font-size: x-small;
+        }
+
+        /* section-1 */
+        #section-1 .input-group {
+            width: 100% !important;
+        }
+
+        #section-1 .welcome {
+            padding-top: 50% !important;
+        }
+
+        #section-1 .get button {
+            margin-inline-end: 90px;
+        }
+
+        /* section-2 */
+        #section-2 .swiper-wrapper {
+            display: inline-flex;
+        }
+
+        #section-2 .cards {
+            display: block !important;
+        }
+
+        #section-2 .container-fluid .row .col .row {
+            display: block;
+        }
+
+        /* section-3 */
+        #section-3 .container .row .row .col {
+            display: contents;
+        }
+
+        /* section-4 */
+        #section-4 .container .bir {
+            flex-direction: column-reverse !important;
+        }
+        .under{
+            position: absolute;
+        }
+        #section-4 .container .iki {
+            flex-direction: column;
+        }
+
+        #section-4 .container .feautures {
+            width: 70%;
+            padding-bottom: 5%;
+        }
+
+        #section-4 .container .col img {
+            display: block;
+        }
+
+        #section-4 img.over {
+            position: relative;
+            width: 100%;
+        }
+
+        #section-4 .container button {
+            width: 25%;
+            padding: 3px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #section-4 #contain {
+            width: 50%;
+            padding-bottom: 5%;
+        }
+
+        /* section-5 */
+        #section-5 .row {
+            display: block;
+        }
+
+        #section-5 .container .tab-content .tab-pane .container .row {
+            display: block !important;
+        }
+
+        /* section-6 */
+        #section-6 .container .row {
+            display: block;
+
+        }
+
+        #section-6 .container .col-4 {
+            width: 100%;
+        }
+
+        /* section-7 */
+        #section-7 .container .row .col {
+            display: block;
+        }
+
+        #section-7 .container .row .col-6 {
+            width: 100%;
+        }
+
+        #section-7 .container .row {
+            display: block;
+        }
+
+        /* section-9 */
+        #section-9 .container .contact {
+            display: block;
+            text-align: -webkit-center;
+        }
+    }
+
+
+</style>
+
+</body>
+
+<section id="section-1">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <a class="navbar-brand text-white ps-2" href="#">Append<span class="text-danger fs-4">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-3">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-4">Feautures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"  aria-current="page" href="#section-5">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-6">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#section-7">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-white" href="#section-9">Recent Posts</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#section-10">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="get justify-contend-end pe-3">
+                <button type="button" class="btn btn-danger ">Get Started</button>
+            </div>
+        </nav>
+        <div class="welcome" style="padding-top: 15%; padding-left: 10%">
+            <h2 class="text-white fw-bolder" style="font-family:Inclusive Sans,sans-serif">Welcome to Our Website</h2>
+            <h5 class="text-white fw-lighter" style="font-family:Inclusive Sans,sans-serif">We are team of talented
+                designer
+                making websites with Boostrap</h5>
+            <div class="input-group mb-3 w-25">
+                <form action="#" class="sign-up-form d-flex bg-body rounded-2 aos-init aos-animate" data-aos="fade-up"
+                      data-aos-delay="300">
+                    <input type="text" class="border border-white" placeholder="Enter email address">
+                    <input type="submit" class="btn btn-danger" value="Sign up">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-2">
+    <div class="container-fluid">
+        <div class="swiper clientSwiper w-100 h-100 py-3 py-lg-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/clients/client-1.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-2.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-3.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-4.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-5.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-6.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-7.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-8.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-9.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-10.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-11.png" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/clients/client-12.png" class="w-100">
+                </div>
+
+            </div>
+            <div class="row d-flex cards p-5">
+                <div class="col p-5 align-content-center">
+                    <h3 class="badge text-wrap fw-normal text-danger" style="width: 6rem; background-color: #ffeded">
+                        About
+                        Us</h3>
+                    <h2>Ducimus rerum libero <br>reprehenderit cumque</h2>
+                    <h5 class="fw-normal">Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque allas
+                        maxime.
+                        Enim reiciendis minus et rerum hic non. Dicta quas cum qula maiores iure. Quidem nulla qui
+                        assumenda
+                        incidunt voluptatem tempora delenti soluta.</h5>
+                    <button class="btn btn-danger" type="button">Read More ‭→</button>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-lg-6 pt-5 pb-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <i class="bi bi-buildings text-danger rounded-circle p-2"
+                                       style="background-color: #ffeded"></i>
+                                    <h5 class="card-title pt-4">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="bi bi-bar-chart text-danger rounded-circle p-2"
+                                       style="background-color: #ffeded"></i>
+                                    <h5 class="card-title pt-4">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 pt-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="bi bi-brightness-high text-danger rounded-circle p-2"
+                                       style="background-color: #ffeded"></i>
+                                    <h5 class="card-title pt-4">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="bi bi-graph-up-arrow text-danger rounded-circle p-2"
+                                       style="background-color: #ffeded"></i>
+                                    <h5 class="card-title pt-4">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tree-bg" class="position-relative tex-center text-white p-0">
+                    <div class="row h-100 text-center align-items-center mx-auto container">
+                        <div class="col-12 col-lg-3">
+                            <p class="fw-normal p-3 pt-4">
+                                <span class="text-white fw-bold bigFont">232</span><br>
+                                <span class="text-white opacity-75 fw-bold fs-4">Client</span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <p class="fw-normal p-3 pt-4">
+                                <span class="text-white fw-bold bigFont">521</span><br>
+                                <span class="text-white opacity-75 fw-bold fs-4">Projects</span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <p class=" fw-normal p-3 pt-4">
+                                <span class="text-white fw-bold bigFont">1453</span><br>
+                                <span class="text-white opacity-75 fw-bold fs-4">Hours Of  Support</span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <p class="fw-normal p-3 pt-4">
+                                <span class="text-white fw-bold bigFont">32</span><br>
+                                <span class="text-white opacity-75 fw-bold fs-4">Workers</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-3">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center fs-2 mt-3 pt-5 fw-bolder">Services</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+            <div class="row services pt-5">
+                <div class="col-12 col-lg-6">
+                    <div class="services p-3">
+                        <i class="bi bi-briefcase fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut.</h5>
+                        </div>
+                    </div>
+                    <div class="services p-3">
+                        <i class="bi bi-bar-chart fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut.</h5>
+                        </div>
+                    </div>
+                    <div class="services p-3">
+                        <i class="bi bi-brightness-high fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class=" services p-3">
+                        <i class="bi bi-card-checklist fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</h5>
+                        </div>
+                    </div>
+                    <div class=" services p-3">
+                        <i class="bi bi-binoculars fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</h5>
+                        </div>
+                    </div>
+                    <div class=" services p-3">
+                        <i class="bi bi-calendar-week fs-2 p-2"></i>
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-4">
+    <div class="container">
+        <div>
+            <h1 class="text-center fs-2 mt-3 pt-5 fw-bolder">Feautures</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+        <div class="row bir pt-3">
+            <div class="col-12 col-lg-6 h-100 align-self-center">
+                <h3 class="fw-bold p-3">Lorem ipsum dolor, consectetur<br>
+                    adipiscing elit.</h3>
+                <h5 class="fw-normal p-3">Duis aute irure dolor in reprehenderit in<br>
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                    Excepteur sint occaecat cupidatat non proident.</h5>
+                <button type="button" class="btn btn-danger ps-3">Get Started</button>
+            </div>
+            <div id="contain" class="col-12 col-lg-6 h-100 align-self-center">
+                <div class="position-relative">
+                    <img class="under frame" src="img/features-light-2.jpg"/>
+                    <img class="over frame" src="img/features-light-1.jpg"/>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row iki" style="padding-top: 8%">
+            <div class="ps-5 col-12 col-lg-6">
+                <img class="feautures w-100 frame" src="img/features-light-3.jpg">
+            </div>
+            <div class="col-12 col-lg-6 align-self-center">
+                <h3 class="fw-bold">In particular, the garbled words of lorem ipsum bear an
+                    unmistakable</h3>
+                <h5 class="fw-normal ">The passage experienced a surge in popularity during the 1960s<br>
+                    when Letraset used it on their dry-transfer sheets</h5>
+                <div class="d-flex">
+                    <i class="bi bi-check text-danger font"></i>
+                    <h5 class="fw-normal">In seeing sample lorem ipsum, interest was piqued</h5>
+                </div>
+                <div class="d-flex">
+                    <i class="bi bi-check font text-danger"></i>
+                    <h5 class="fw-normal">In seeing sample lorem ipsum, interest was piqued</h5>
+                </div>
+                <div class="d-flex">
+                    <i class="bi bi-check font text-danger "></i>
+                    <h5 class="fw-normal">In seeing sample lorem ipsum, interest was piqued</h5>
+                </div>
+                <button type="button" class="btn btn-danger ">Get Started</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<section id="section-5">
+    <div class="container">
+        <div>
+            <h1 class="text-center fs-2 pt-5 mt-3 fw-bolder">Portfolio</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-3 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-3" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">App
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-3" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Card
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-3" data-bs-toggle="tab" data-bs-target="#portfolio-tab-pane"
+                        type="button" role="tab" aria-controls="portfolio-tab-pane" aria-selected="false">Web
+                </button>
+            </li>
+
+        </ul>
+        <div class="tab-content " id="myTabContent" style="text-align: center">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                 tabindex="0">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="img/masonry-portfolio/masonry-portfolio-1.jpg" class="w-75">
+                            <img src="img/masonry-portfolio/masonry-portfolio-6.jpg" class="w-75 pt-3">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/masonry-portfolio/masonry-portfolio-2.jpg" class="w-75">
+                            <img src="img/masonry-portfolio/masonry-portfolio-5.jpg" class="w-75 pt-3">
+                            <img src="img/masonry-portfolio/masonry-portfolio-9.jpg" class="w-75 pt-3">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/masonry-portfolio/masonry-portfolio-3.jpg" class="w-75">
+                            <img src="img/masonry-portfolio/masonry-portfolio-4.jpg" class="w-75 pt-3">
+                            <img src="img/masonry-portfolio/masonry-portfolio-7.jpg" class="w-75 pt-3">
+                            <img src="img/masonry-portfolio/masonry-portfolio-8.jpg" class="w-75 pt-3">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-1.jpg" class="w-75">
+                        </div>
+
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-4.jpg" class="w-75">
+                        </div>
+
+                        <div class="col">
+
+                            <img src="img/masonry-portfolio/masonry-portfolio-7.jpg" class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-2.jpg" class="w-75">
+                        </div>
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-5.jpg" class="w-75">
+                        </div>
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-8.jpg" class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="portfolio-tab-pane" role="tabpanel" aria-labelledby="portfolio-tab"
+                 tabindex="0">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-3.jpg" class="w-75">
+                        </div>
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-6.jpg" class="w-75">
+                        </div>
+                        <div class="col">
+                            <img src="img/masonry-portfolio/masonry-portfolio-9.jpg" class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-6">
+    <div class="container">
+        <div>
+            <h1 class="text-center mt-3 fs-2 pt-5 fw-bolder">Pricing</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="fw-bold">Free Plan</h2>
+                        <i class="bi bi-box p-3 pt-2 rounded-circle icon"></i>
+                        <h2 class="fs-1 price p-3 fw-bold"><span class=" text-danger fs-5 dollar">$</span>0<span
+                                class="fs-5 text-muted">/month</span></h2>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <a href="#" class="btn btn-light">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="fw-bold">Business Plan</h2>
+                        <i class="bi bi-box p-3 pt-2 rounded-circle icon"></i>
+                        <h2 class="fs-1 price p-3 fw-bold"><span class=" text-danger fs-5 dollar">$</span>0<span
+                                class="fs-5 text-muted">/month</span></h2>
+                        <div class="d-flex">
+                            <i class="bi bi-check font color"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font color"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger "></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <a href="#" class="btn btn-light">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="fw-bold">Developer Plan</h2>
+                        <i class="bi bi-box p-3 pt-2 rounded-circle icon"></i>
+                        <h2 class="fs-1 price p-3 fw-bold"><span class=" text-danger fs-5 dollar">$</span>0<span
+                                class="fs-5 text-muted">/month</span></h2>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger"></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check font text-danger "></i>
+                            <p class="fw-normal font text-center">In seeing a sample of lorem ipsum, his.</p>
+                        </div>
+                        <a href="#" class="btn btn-light">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4 mt-4">
+            <div class="col-12 col-lg-6">
+                <h3>Frequently Asked</h3>
+                <h3 class="fw-bold">Questions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong>This the third item's accordion?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default, until the collapse plugin adds the appropriate. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco commodo consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>This is the third item's accordion ?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default, until the collapse plugin adds the appropriate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>This is third item's accordion body?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default, until the collapse plugin adds the appropriate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>This is the third item's accordion body?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default, until the collapse plugin adds the appropriate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>This is the third item's accordion body irure dolor?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default, until the collapse plugin adds the appropriate.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-7">
+    <div class="container text-center cont">
+        <div>
+            <h1 class="text-center mt-3 fs-2 pt-5 fw-bolder">Team</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+        <div class="cont text-center pb-3 ">
+            <div class="row justify-content-center p-4 d-flex">
+                <div class="col-12 col-lg-12">
+                    <div class="">
+                        <img src="img/team/team-1.jpg" class=" rounded-circle frame w-50">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                    <div class="">
+                        <img src="img/team/team-2.jpg" class=" rounded-circle frame w-50 ">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                    <div class="">
+                        <img src="img/team/team-3.jpg" class=" rounded-circle frame w-50">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-4 d-flex">
+                <div class="col-lg-12">
+                    <div class="">
+                        <img src="img/team/team-4.jpg" class=" rounded-circle frame w-50">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                    <div class="">
+                        <img src="img/team/team-5.jpg" class=" rounded-circle frame w-50">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                    <div class="">
+                        <img src="img/team/team-6.jpg" class=" rounded-circle frame w-50 ">
+                        <h4 class="fs-5 fw-bold">Walter White</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <h5> More recently the growth of web design has helped <br>proliferate lorem ipsum across</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-black p-3 justify-content-center">
+            <h4 class="text-white">Call To Action</h4>
+            <p class="text-white">Duis aute designing a website around placeholder text is unacceptable sewing <br>custom
+                without taking measurements.</p>
+            <button type="button" class="btn btn-outline-light w-25">Call To Action</button>
+        </div>
+        <div class="row radius rec888">
+            <div class="col-12 col-lg-6">
+                <h4 class="fw-bold fs-1 text-start">Testimonials</h4>
+                <p class="text-start">He wanted people to see, and to get them to see<br> he had to keep them from
+                    reading.The same Wordpress<br> template might eventually be home to a fitness blog</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="swiper testimonialsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card pb-5">
+                                <div class="d-flex pt-2 ps-2">
+                                    <div class="d-flex align-items-start" style="width: 15% ">
+                                        <img src="img/testimonials/testimonials-1.jpg"
+                                             class="card-img-top rounded-circle">
+                                    </div>
+                                    <div class="align-items-start d-flex flex-column ps-3 ps-lg-4">
+                                        <p class="fw-bold mb-0">Saul Goodman</p>
+                                        <p class="pe-3 mb-0 text-muted">Ceo&Founder</p>
+                                        <div class="d-flex">
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3 pb-lg-5">
+                                    <i class="bi bi-quote text-danger" style="color: red"></i>
+                                    <span>Some quick example text to build on the card title and make
+                                        up the bulk of the card's content.</span>
+                                    <i class="bi bi-quote text-danger gly-rotate-180"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card pb-5">
+                                <div class="d-flex pt-2 ps-2">
+                                    <div class="d-flex align-items-start" style="width: 15% ">
+                                        <img src="img/testimonials/testimonials-2.jpg"
+                                             class="card-img-top rounded-circle">
+                                    </div>
+                                    <div class="align-items-start d-flex flex-column ps-3 ps-lg-4">
+                                        <p class="fw-bold mb-0">Saul Goodman</p>
+                                        <p class="pe-3 mb-0 text-muted">Ceo&Founder</p>
+                                        <div class="d-flex">
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3 pb-lg-5">
+                                    <i class="bi bi-quote text-danger" style="color: red"></i>
+                                    <span>Some quick example text to build on the card title and make
+                                        up the bulk of the card's content.</span>
+                                    <i class="bi bi-quote text-danger gly-rotate-180"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card pb-5">
+                                <div class="d-flex pt-2 ps-2">
+                                    <div class="d-flex align-items-start" style="width: 15% ">
+                                        <img src="img/testimonials/testimonials-3.jpg"
+                                             class="card-img-top rounded-circle">
+                                    </div>
+                                    <div class="align-items-start d-flex flex-column ps-3 ps-lg-4">
+                                        <p class="fw-bold mb-0">Saul Goodman</p>
+                                        <p class="pe-3 mb-0 text-muted">Ceo&Founder</p>
+                                        <div class="d-flex">
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3 pb-lg-5">
+                                    <i class="bi bi-quote text-danger" style="color: red"></i>
+                                    <span>Some quick example text to build on the card title and make
+                                        up the bulk of the card's content.</span>
+                                    <i class="bi bi-quote text-danger gly-rotate-180"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card pb-5">
+                                <div class="d-flex pt-2 ps-2">
+                                    <div class="d-flex align-items-start" style="width: 15% ">
+                                        <img src="img/testimonials/testimonials-4.jpg"
+                                             class="card-img-top rounded-circle">
+                                    </div>
+                                    <div class="align-items-start d-flex flex-column ps-3 ps-lg-4">
+                                        <p class="fw-bold mb-0">Saul Goodman</p>
+                                        <p class="pe-3 mb-0 text-muted">Ceo&Founder</p>
+                                        <div class="d-flex">
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3 pb-lg-5">
+                                    <i class="bi bi-quote text-danger" style="color: red"></i>
+                                    <span>Some quick example text to build on the card title and make
+                                        up the bulk of the card's content.</span>
+                                    <i class="bi bi-quote text-danger  gly-rotate-180"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card pb-5">
+                                <div class="d-flex pt-2 ps-2">
+                                    <div class="d-flex align-items-start" style="width: 15% ">
+                                        <img src="img/testimonials/testimonials-5.jpg"
+                                             class="card-img-top rounded-circle">
+                                    </div>
+                                    <div class="align-items-start d-flex flex-column ps-3 ps-lg-4">
+                                        <p class="fw-bold mb-0">Saul Goodman</p>
+                                        <p class="pe-3 mb-0 text-muted">Ceo&Founder</p>
+                                        <div class="d-flex">
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                            <i class="bi bi-star-fill ps-1" style="color: #FFA500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3 pb-lg-5">
+                                    <i class="bi bi-quote text-danger"></i>
+                                    <span>Some quick example text to build on the card title and make
+                                        up the bulk of the card's content.</span>
+                                    <i class="bi bi-quote text-danger gly-rotate-180"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-8">
+    <div class="container">
+        <div>
+            <h1 class="text-center mt-3 fs-2 pt-5 fw-bolder">Recent Posts</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+        <div class="row px-5 justify-content-center">
+            <div class="col-12 col-lg-4 pt-4">
+                <div class="card rounded-4 ">
+                    <div class="overflow-hidden">
+                    <img src="img/blog/blog-1%20kopya.jpg" class="card-img-top rounded-top-4 cardImgAnimation" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Politics</p>
+                        <p class="card-text fw-bold">Some quick example text to build on the.</p>
+                        <div class="d-flex">
+                            <img src="img/blog/blog-author-2.jpg" class="w-25 rounded-circle">
+                            <p class="fw-bold pt-3 p-2">Maria Doe<br><span
+                                    class="fw-normal text-muted">Jun 22,2022</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 pt-4">
+                <div class="card rounded-4 ">
+                    <div class="overflow-hidden">
+                    <img src="img/blog/blog-2%20kopya.jpg" class="card-img-top rounded-top-4 cardImgAnimation" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Sports</p>
+                        <p class="card-text fw-bold">Some quick example text to build on the.</p>
+                        <div class="d-flex">
+                            <img src="img/blog/blog-author-3.jpg" class="w-25 rounded-circle">
+                            <p class="fw-bold pt-3 p-2">Allisa Mayer<br><span
+                                    class="fw-normal text-muted">Jun 22,2022</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 pt-4">
+                <div class="card rounded-4 ">
+                    <div class="overflow-hidden">
+                    <img src="img/blog/blog-3%20kopya.jpg" class="card-img-top rounded-top-4 cardImgAnimation" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Entertainmet</p>
+                        <p class="card-text fw-bold">Some quick example text to build on the.</p>
+                        <div class="d-flex">
+                            <img src="img/blog/blog-author.jpg" class="w-25 rounded-circle">
+                            <p class="fw-bold pt-3 p-2">Mark Dower <br><span
+                                    class="fw-normal text-muted">Jun 22,2022</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-9">
+    <div class="container">
+        <div>
+            <h1 class="text-center fs-2 mt-3 pt-5 fw-bolder">Contact</h1>
+            <h5 class="text-center fw-normal">Necessitabtibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit</h5>
+        </div>
+        <div class="row w-75 contact">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pt-3">
+                        <div class="card">
+                            <div class="card-body cards">
+                                <i class="bi bi-geo-alt fs-2  text-danger"></i>
+                                <h5 class="card-title fw-bold">Address</h5>
+                                <p class="card-text">A108 Adam Street</p>
+                                <p class="card-text">New York, NY532200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-3">
+                        <div class="card ">
+                            <div class="card-body cards">
+                                <i class="bi bi-telephone fs-2 text-danger "></i>
+                                <h5 class="card-title fw-bold">Call Us</h5>
+                                <p class="card-text">+1 4354 67587 86</p>
+                                <p class="card-text">+1 6789 67587 41</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 pt-3">
+                        <div class="card">
+                            <div class="card-body cards">
+                                <i class="bi bi-envelope fs-2 text-danger "></i>
+                                <h5 class="card-title fw-bold">Email Us</h5>
+                                <p class="card-text">info@examle.com</p>
+                                <p class="card-text">contact@examle.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-3">
+                        <div class="card">
+                            <div class="card-body cards">
+                                <i class="bi bi-clock fs-2 text-danger "></i>
+                                <h5 class="card-title fw-bold">Open Hours</h5>
+                                <p class="card-text">Monday-Friday</p>
+                                <p class="card-text">09.00AM-05.00PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-3">
+                <div class="row cards">
+                    <form class="text-center">
+                        <div class="row cards">
+                            <div class="col-6 pt-3">
+                                <input type="text" class="border border-white" placeholder="Your Name" aria-label="First name">
+                            </div>
+                            <div class="col-6 pt-3">
+                                <input type="text" class="border border-white" placeholder="Your Email" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                            <input type="text" class="border border-white" placeholder="Subject">
+                        </div>
+                        <div class="form-floating pt-4">
+                            <textarea class="border border-white" placeholder="Message" style="height: 150px"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-danger w-50 m-3">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex mt-5 p-5 cards">
+            <div class="col-lg-5">
+                <h4 class="fw-bold fs-1 text-start pt-3">Append</h4>
+                <p class="">He wanted people to see, and to get them to see he had to keep them from reading.The same
+                    Wordpress template might eventually be home to a <br>fitness blog.</p>
+                <div class="d-flex">
+                    <i class="bi bi-twitter p-2"></i>
+                    <i class="bi bi-facebook p-2"></i>
+                    <i class="bi bi-instagram p-2"></i>
+                    <i class="bi bi-linkedin p-2"></i>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h4 class="fw-bold text-start fs-5 pt-3">Useful Links</h4>
+                <p class="font">Home</p>
+                <p class="font">About us</p>
+                <p class="font">Services</p>
+                <p class="font">Terms of service</p>
+                <p class="font">Privacy policy</p>
+            </div>
+            <div class="col-lg-2 ps-3">
+                <h4 class="fw-bold font text-start fs-5 pt-3">Our Services</h4>
+                <p class="font">Web Design</p>
+                <p class="font">Web Development</p>
+                <p class="font">Product Management</p>
+                <p class="font">Marketing</p>
+                <p class="font">Graphic Design</p>
+            </div>
+            <div class="col-lg-3 ps-3">
+                <h4 class="fw-bold font text-start fs-5 pt-3">Contact Us</h4>
+                <p class="font">A108 Adam Street<br>New York, 535022 <br>United States</p>
+                <p class="font"><span class="fw-bold">Phone:</span> +1 4354 67587</p>
+                <p class="font"><span class="fw-bold">Email:</span>info@example.com</p>
+            </div>
+
+            <div class="text-center p-3 font" style="background-color: #dfe0e0">
+                <p class="fw-medium">© Copyright <span class="fw-bold">Append</span> All Rights Reserved</p>
+                <p class="fw-medium">Designed bu <span class="color">BoostrapMade</span></p>
+            </div>
+        </div>
+
+        <div class="text-end pt-3 pe-0">
+            <a href="#section-1" class="btn btn-danger position-fixed bottom-0 end-0 mb-3 me-3 d-flex align-items-center justify-content-center" type="button" style="width: 40px; height: 40px"><i class="bi bi-arrow-up-short fs-3"></i></a>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js">
+</script>
+
+<script>
+    if (window.scrollY > window.innerHeight) ;
+</script>
+
+<script>
+    window.onscroll = function (ev) {
+        if (window.scrollY > 500) {
+            document.getElementById("navbar").style.backgroundColor = "black";
+        } else {
+            document.getElementById("navbar").style.backgroundColor = "unset";
+        }
+    };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var clientSwiper = new Swiper(".clientSwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+            },
+        },
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        loop:true,
+    });
+</script>
+<script>
+    function myPlugin({swiper, extendParams, on}) {
+        extendParams({
+            debugger: false,
+        });
+
+        on('init', () => {
+            if (!swiper.params.debugger) return;
+            console.log('init');
+        });
+        on('click', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('click');
+        });
+        on('tap', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('tap');
+        });
+        on('doubleTap', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('doubleTap');
+        });
+        on('sliderMove', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('sliderMove');
+        });
+        on('slideChange', () => {
+            if (!swiper.params.debugger) return;
+            console.log(
+                'slideChange',
+                swiper.previousIndex,
+                '->',
+                swiper.activeIndex
+            );
+        });
+        on('slideChangeTransitionStart', () => {
+            if (!swiper.params.debugger) return;
+            console.log('slideChangeTransitionStart');
+        });
+        on('slideChangeTransitionEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('slideChangeTransitionEnd');
+        });
+        on('transitionStart', () => {
+            if (!swiper.params.debugger) return;
+            console.log('transitionStart');
+        });
+        on('transitionEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('transitionEnd');
+        });
+        on('fromEdge', () => {
+            if (!swiper.params.debugger) return;
+            console.log('fromEdge');
+        });
+        on('reachBeginning', () => {
+            if (!swiper.params.debugger) return;
+            console.log('reachBeginning');
+        });
+        on('reachEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('reachEnd');
+        });
+    }
+</script>
+
+<script>
+    var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+</html>
+
